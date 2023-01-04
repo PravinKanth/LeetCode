@@ -5,7 +5,7 @@ class Solution:
         l=len(a)
         for i in range(l):
             for j in range(i):
-                if a[i]%a[j]==0 and len(ans[i])<len(ans[j])+1:
+                if a[i]%a[j]==0 and len(ans[i])<=len(ans[j]):
                     ans[i]=[a[i]]+ans[j]
         max1=0
         lst=[]
