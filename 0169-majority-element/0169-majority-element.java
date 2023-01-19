@@ -1,7 +1,7 @@
 class Solution {
     public int majorityElement(int[] nums) {
-                Arrays.sort(nums);
-        int i=nums[nums.length-1];
+        Arrays.sort(nums);
+        int i=Integer.MAX_VALUE;
         int f=nums.length/2;
         int count=0;
         int ans=0;
